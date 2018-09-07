@@ -47,49 +47,45 @@ public void verifyAdminUpdatePerformanceReviews(){}
 
 
 @Test
-public void verify admin cannot remove employee performance reviews (){}
+public void verifyAdminCanRemoveEmpReview (){}
 
 
 
 @Test
-public void verify admin cannot submit feedback on performance reviews (){}
+public void verifyAdminCanSubmitReviews (){}
 
 
 @Test
-public void verify admin can assign a single employee to participate in another employee’s performance review(){}
-
-
-@Test
-public void verify admin can assign multiple employees to participate in another employee’s performance review(){}
+public void verifyAdminCanAssignEmpToAnotherEmpReview(){}
 
 @Test
-public void verify deleted employees can no longer be viewed (including performance review)(){}
+public void verifyAdminCanAssignManyEmpToEmployeesReview(){}
 
 
 EmployeeTests
 
 @Test
-public void verify deleted employee no longer appears on employees list of performance reviews requiring feedback(){}
+public void verifyDeletedEmpDoesNotAppearOnList(){}
 
 
 @Test
-public void verify employee can submit feedback on performance reviews (){}
+public void verifyEmpCanSubmitReview (){}
 
 @Test
-public void verify employee cannot delete feedback previously submitted (){}
+public void verifyEmpCantDeleteReview(){}
 
 
 @Test
-public void verify employee cannot edit feedback previously submitted(){}
+public void verifyEmpCantEditReviewSubmitted(){}
 
 @Test
-public void verify employees cannot add new employees(){}
+public void verifyEmpCantAddEmployees(){}
 
 @Test
-public void verify employee cannot delete employees(){}
+public void verifyEmpCantDeleteEmployees(){}
 
 @Test
-public void verify employee cannot update employees(){}
+public void verifyEmpCantUpdateEmployees(){}
 
 @Test
-public void verify employees cannot access a performance review, if they are not assigned(){}
+public void verifyEmpCantAccessReviewWhenNotAssigned(){}
