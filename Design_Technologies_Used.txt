@@ -1,0 +1,12 @@
+Server side testing
+ 
+	* Rest assured  - java
+	junit
+
+Web app
+
+	* Selenium - Web driver
+	junit
+	testNG
+	For Cross browser testing - Browserstack/Selenium grid/ SauceLabs  dependent on commercial constraints
+

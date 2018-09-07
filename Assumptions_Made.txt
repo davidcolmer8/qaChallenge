@@ -1,0 +1,59 @@
+Assumptions:
+	The system is for only one business 
+	Will be supported on Chrome/FF/IE/Safari browsers
+	Is responsive - mobile first design
+	Session will time out after x amount of time of inactivity
+	The review will be have no min chars and a max of 4000chars. 
+	Special chars will be changed to plain text to prevent against injection attacks.
+	All actions will be logged in a log file and also a history presented in the frontend 
+	to show what has been edited, deleted and by whom.
+	
+	Multiple admin accounts. 
+	An admin is unable to submit feedback to a review they carried out
+	An admin has the ability to assign multiple employees to a review 
+	An admin can set one employee to multiple reviews 
+	An admin can't set the employee to participate in their own review.
+	An admin can only update a review they have made
+	An admin can delete any review submitted - potential concurrent issue. Second user to click 
+	delete will see user friendly message.
+	Two admins updating the same employee - the last one to submit will be unable to submit update 'Concurrent user issue'
+	
+	
+	Employees submitted feedback is read only 
+	Employees can't delete submitted feedback 
+	Employees can't view feedback which is not theirs
+	Employees can't leave feedback if not assigned
+	Employees list of reviews requiring feedback will be paginated to 10 reviews per page for performance
+		
+
+Admin view 
+*	Log in  
+*	Add Employee button at top of page
+*	Drop down to “Mass Update” and “Delete” below 
+*	“Apply” button located next to drop down
+*	Search bar located at top of employee list
+*	Each entry has “Edit” and “Assign” buttons located right of row
+*	Each entry has check box located left of name
+*	Clicking on Employee name or “Edit” will direct admin to employee profile
+*	Employee Profile will have following fields: “Full name” and “Job Title” 
+*	Text box will be located on Employee profile to complete review
+*	“Save” and “Cancel” buttons 
+
+
+Employee view
+*	Log in default – List of employees’ names requiring performance review feedback
+*	Each entry has “Leave Feedback” buttons located right of row
+*	“Leave Feedback” button will direct user to employee review
+*	Text box will be located here to leave feedback
+*	“Submit” and “Cancel” buttons
+
+
+Challenge Scope
+•	High level description of design and technologies used
+•	Server Side
+o	Select an Automation Framework, and using pseudo code build the test cases required for the CRUD server tests
+•	Web app
+o	Select an Automation Framework and using pseudo code describe the test cases required to automate the test of this app
+•	Document all assumptions made
+•	Complete solutions aren't required.
+

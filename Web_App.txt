@@ -1,0 +1,95 @@
+AdminTests
+
+@BeforeTest
+public void setUp(){
+	driver.get(URL)
+	 
+}
+
+@AfterTest
+ public void afterTest() {
+        driver.close();
+        driver.quit();
+    }
+    
+@Test
+public void verifyAdminCanAddNewEmployees(){
+	adminpage.clickAddEmpBtn();
+	assertTrue(addEmpPageIsDisplayed());
+	addEmpPage.completeAddEmpForm();
+	addEmpPage.clickSubmit();
+	assertTrue(adminPage.successMsgIsDisplayed)
+	
+}
+
+@Test
+public void verifyAdminCanUpdateEmployees(){
+}
+
+@Test
+public void verifyAdminCanRemoveEmployees(){
+}
+
+@Test
+public void verifyAdminCanViewEmployees(){
+}
+
+@Test
+public void verifyEmployeesDoNotDuplicate(){}
+
+@Test
+public void verifyAdminAddPerfReview(){}
+
+
+@Test
+public void verifyAdminUpdatePerformanceReviews(){}
+
+
+
+@Test
+public void verify admin cannot remove employee performance reviews (){}
+
+
+
+@Test
+public void verify admin cannot submit feedback on performance reviews (){}
+
+
+@Test
+public void verify admin can assign a single employee to participate in another employee’s performance review(){}
+
+
+@Test
+public void verify admin can assign multiple employees to participate in another employee’s performance review(){}
+
+@Test
+public void verify deleted employees can no longer be viewed (including performance review)(){}
+
+
+EmployeeTests
+
+@Test
+public void verify deleted employee no longer appears on employees list of performance reviews requiring feedback(){}
+
+
+@Test
+public void verify employee can submit feedback on performance reviews (){}
+
+@Test
+public void verify employee cannot delete feedback previously submitted (){}
+
+
+@Test
+public void verify employee cannot edit feedback previously submitted(){}
+
+@Test
+public void verify employees cannot add new employees(){}
+
+@Test
+public void verify employee cannot delete employees(){}
+
+@Test
+public void verify employee cannot update employees(){}
+
+@Test
+public void verify employees cannot access a performance review, if they are not assigned(){}

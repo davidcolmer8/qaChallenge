@@ -1,0 +1,38 @@
+Assuming that the GET request returns JSON as
+
+GET Get prf Review by ID prfreview/1
+
+GET Search for prf Review prfreview/search?start=1&limit=1&finalDate_from=2018-09-07
+
+DELETE Delete prf Review prfreview/1
+
+POST Create prf Review prfreview
+{
+ "pmreview":{
+ 	"dueDate":"2018-03-11",
+ 	"emplCalcAchievement":"Sample rating review",
+ 	"emplComments":"test",
+ 	"employeeDueDate":"2018-03-11",
+ 	"employee":14,
+	"emplSignature":"Employee",
+ 	"emplSignatureDate":"2018-03-12",
+ 	"emplSubmittedDate":"2018-03-12",
+ 	"endDate":"2018-03-12",
+	"jobTitle":"Tester",
+	"comments":"test",
+ 	"mgrSignature":"Manager",
+	"mgrSignatureDate":"2018-03-04",
+ 	"startDate":"2018-03-04",
+ 	"status":1,
+ 	"title":"Test Review Template",
+ }
+}
+
+PUT Update PM Review …/object/pmreview/146
+{
+ "pmreview":{
+ 	"comments":"Great staff member. Works well!!"
+ }
+}
+
+
